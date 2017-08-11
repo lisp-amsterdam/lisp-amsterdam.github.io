@@ -18,7 +18,7 @@ computer assisted music composition and analysis implemented in Common Lisp.
 After an initial overview, we'll walk through its implementation and motivate
 it from a user's perspective.
 
-[slides](presentations/2017-07-20/liszp.pdf)
+[slides](presentations/2017-07-20/liszp.pdf) [video](https://youtu.be/yaecUItAjlI)
 
 ## Common lisp, good parts (Dmitry Petrov) (2017-05-01)
 
