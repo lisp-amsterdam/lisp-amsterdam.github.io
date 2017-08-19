@@ -1,0 +1,168 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto Slab, sans-serif;
+}
+
+header, .presentations {
+	background: #fff;
+	color: #383a3c;
+	padding: 50px 0;
+}
+
+.container {
+	width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.logo-title {
+	display: flex;
+	align-items: center;
+}
+
+.logo-img {
+	flex-basis: 20%;
+}
+
+.header-title {
+	font-size: 45px;
+	color: #383a3c;
+	text-transform: uppercase;
+	font-weight: bold; 
+	flex-basis: 80%;
+}
+
+.about {
+	background: #f07878;
+	color: #fff;
+	padding: 30px 0;
+}
+
+.about-us-events {
+	display: flex;
+}
+
+.about-us {
+	flex-basis: 50%;
+}
+
+.events {
+	flex-basis: 50%;
+}
+
+.about-us h1, .events h2 {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0 30px;
+	text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.about-description {
+	padding: 10px 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.button-wrap {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.button {
+	background: #fcfaf7;
+	border-radius: 25px;
+	padding: 10px 15px;
+	margin-top: 25px;
+	border: 0;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	display: inline-block;
+}
+
+.button a {
+	font: 18px Roboto Slab, sans-serif;
+	text-decoration: none;
+	color: #383a3c;
+}
+
+.presentations {
+	padding-top: 30px;
+}
+
+.presentations h2 {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0 35px;
+}
+
+.presentation {
+	display: flex;
+	margin: 20px 0;
+}
+
+.video {
+	flex-basis: 30%;
+}
+
+.video-description {
+	margin-left: 3%;
+	flex-basis: 67%;
+}
+
+.presentation-title, .presentation-author {
+	font-weight: bold;
+}
+
+.presentation-title {
+	font-size: 25px;
+}
+
+.presentation-author, .presentation-date {
+	font: 16px Oswald, sans-serif;
+	padding: 5px 0 10px;
+}
+
+.presentation-description {
+	line-height: 2;
+	font-size: 16px;
+	padding-right: 10px;
+}
+
+.dividing-line {
+	height: 2px;
+	width: 70px;
+	background: #383a3c;
+	margin: 5px 0;
+}
+
+
+
+
+@media (max-width: 1160px) {
+
+	.presentation-title {
+	font-size: 22px;
+	}
+
+	.presentation-author, .presentation-date {
+	font: 14px Oswald, sans-serif;
+	padding: 5px 0 10px;
+	}
+
+	.presentation-description {
+	line-height: 2;
+	font-size: 14px;
+	}
+
+}
+
+
+
