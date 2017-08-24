@@ -1,0 +1,290 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto Slab, sans-serif;
+}
+
+header, .presentations {
+	background: #fff;
+	color: #383a3c;
+	padding: 50px 0;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.logo-title {
+	display: flex;
+	align-items: center;
+}
+
+.logo-img {
+	flex-basis: 20%;
+}
+
+.header-title {
+	font-size: 45px;
+	color: #383a3c;
+	text-transform: uppercase;
+	font-weight: bold; 
+	flex-basis: 80%;
+}
+
+.about {
+	background: #f07878;
+	color: #fff;
+	padding: 30px 0;
+}
+
+.about-us-events {
+	display: flex;
+}
+
+.about-us {
+	flex-basis: 50%;
+}
+
+.events {
+	flex-basis: 50%;
+	padding-left: 25px;
+	line-height: 1.5;
+}
+
+.about-us h1, .events h2 {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0 30px;
+	text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.events-description-wrap {
+	margin-left: 30px;
+}
+
+.events ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.events li {
+	list-style: none;
+}
+
+.events a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.events a:hover {
+	text-decoration: underline;
+}
+
+.meetup {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.twitter {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.event-description {
+	margin-top: 25px;
+}
+
+.about-description {
+	padding: 10px 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.button-wrap {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.button {
+	background: #fcfaf7;
+	border-radius: 25px;
+	padding: 10px 15px;
+	margin-top: 25px;
+	border: 0;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	display: inline-block;
+}
+
+.button a {
+	font: 18px Roboto Slab, sans-serif;
+	text-decoration: none;
+	color: #383a3c;
+}
+
+.presentations {
+	padding-top: 30px;
+}
+
+.presentations h2 {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0 35px;
+}
+
+.presentation {
+	display: flex;
+	margin: 20px 0;
+}
+
+.video {
+	flex-basis: 30%;
+}
+
+.video-description {
+	margin-left: 3%;
+	flex-basis: 67%;
+}
+
+.presentation-title, .presentation-author {
+	font-weight: bold;
+}
+
+.presentation-title {
+	font-size: 25px;
+}
+
+.presentation-author, .presentation-date {
+	font: 16px Oswald, sans-serif;
+	padding: 5px 0 10px;
+}
+
+.presentation-link {
+	display: none;
+	margin-bottom: 20px;
+}
+
+.presentation-link > img {
+	vertical-align: bottom;
+}
+
+
+.presentation-link > a {
+	color: #333;
+}
+
+.presentation-description {
+	line-height: 2;
+	font-size: 16px;
+	padding-right: 10px;
+}
+
+.dividing-line {
+	height: 2px;
+	width: 70px;
+	background: #383a3c;
+	margin: 5px 0;
+}
+
+
+
+
+@media (max-width: 1160px) {
+
+	.presentation-title {
+	font-size: 22px;
+	}
+
+	.presentation-author, .presentation-date {
+	font: 14px Oswald, sans-serif;
+	padding: 5px 0 10px;
+	}
+
+	.presentation-description {
+	line-height: 2;
+	font-size: 14px;
+	}
+
+}
+
+@media (max-width: 855px) {
+	.header-title {
+    font-size: 35px;
+	}
+
+	iframe {
+		width: 200px;
+		height: 125px;
+		margin-right: 10px;
+	}
+
+	.presentation {
+		display: block;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: 10px;
+		margin-bottom: 5px;
+	}
+
+	.presentation:last-child {
+		border-bottom: none;
+	}
+
+	.video {
+		float: left;
+	}
+}
+
+
+@media (max-width: 700px) {
+	.presentations h2,
+	.about-us h1,
+	.events h2 {
+		font-size: 30px;
+	}
+
+	.about-us-events {
+   		display: block;
+	}
+
+	.events {
+		padding-left: 0;
+	}
+
+	.events-description-wrap {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.header-title {
+    	font-size: 19px;
+	}
+
+	.events {
+		border-top: 1px dashed #ddd;
+	}
+
+	.events a {
+		text-decoration: underline;
+	}
+
+	iframe {
+		display: none;
+	}
+
+	.presentation-link {
+		display: block;
+	}
+
+}
+
